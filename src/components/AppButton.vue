@@ -1,5 +1,7 @@
 <template>
-  <button class="app-btn" :style="{ background: color }"><slot /></button>
+  <button class="app-btn" :style="{ background: color }">
+    <slot />
+  </button>
 </template>
 
 <script>
@@ -12,5 +14,12 @@ export default {
 </script>
 
 <style scoped>
-.app-btn { border: 0; color: white; padding: 11px 20px; border-radius: 8px; font-size: 15px; cursor: pointer; }
+.app-btn {
+  border: 0;
+  color: red;
+  padding: 11px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
 </style>
